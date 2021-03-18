@@ -23,6 +23,12 @@ const routes = [
     component: () => import('../views/Admin')
   },
 
+  {
+    path: '/newpost',
+    name: 'newpost',
+    component: () => import('../views/NewPost')
+  },
+
 ]
 
 const router = new VueRouter({

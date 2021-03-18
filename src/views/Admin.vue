@@ -1,6 +1,8 @@
 <template>
 <div id="app">
-  <h1>L'admin</h1>
+
+   <button id="add-post" ><router-link to="/newpost">Ajouter une page</router-link></button>
+
 <Blogcard></Blogcard>
 </div>
 </template>
@@ -13,6 +15,11 @@ export default {
 
 name: "Admin",
   components: { Blogcard},
+  methods: {
+    addpost() {
+      this.$emit("addpost", this.post);
+    },
+  },
 }
 </script>
 
