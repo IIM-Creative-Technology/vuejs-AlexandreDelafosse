@@ -1,40 +1,32 @@
 <template>
-<div id="app">
+<div>
+  <button id="add-post" ><router-link to="/newpost">Ajouter une page</router-link></button>
 
-   <button id="add-post" ><router-link to="/newpost">Ajouter une page</router-link></button>
+<div class="content" v-for="(posts, index) in this.$store.getters.Post" :key="(posts, index)">
 
-<Blogcard></Blogcard>
+  <div class="Postscontent">
+
+    <h2>
+      {{posts[0]}}
+    </h2>
+
+    <p>
+      {{posts[3]}}
+    </p>
+  </div>
+
+  </div>
+
 </div>
+
 </template>
 
 <script>
-
-import Blogcard from "@/components/Blogcard.vue";
-
 export default {
-
-name: "Admin",
-  components: { Blogcard},
-  methods: {
-    addpost() {
-      this.$emit("addpost", this.post);
-    },
-  },
+  name: "Admin",
 }
 </script>
 
 <style scoped>
-* {
-  padding: 0;
-  margin: 0;
-}
 
-body {
-  background-color: rgb(216, 216, 83);
-  min-height: 100vh;
-}
-
-#app {
-  padding-top: 100px;
-}
 </style>

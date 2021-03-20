@@ -1,4 +1,4 @@
-# renduvue
+# vue2
 
 ## Project setup
 ```
