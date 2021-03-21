@@ -67,6 +67,7 @@ export default {
 .trash{
   width: 2%;
   height:5%;
+  cursor: pointer;
 }
 .content{
 
