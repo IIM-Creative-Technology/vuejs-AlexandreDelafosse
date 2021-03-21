@@ -23,6 +23,8 @@
 
 </div>
 
+    <a class="Edit">Editer</a>
+
     <a v-on:click="deletePost(index)" class="trash">X</a>
 
   </div>
@@ -55,6 +57,7 @@ export default {
 </script>
 
 <style scoped>
+
 .Postscontent{
   display: flex;
   margin:25px;
@@ -67,9 +70,21 @@ export default {
 .trash{
   width: 2%;
   height:5%;
+<<<<<<< HEAD
+  background: grey;
+  padding: 10px;
+  border-radius:9%;
+=======
   cursor: pointer;
+>>>>>>> 5684241c112e513efc473d9870dcced48c82a838
 }
-.content{
-
+.Edit{
+  background: grey;
+  height: 15px;
+  padding: 15px;
+  border-radius:9%;
+}
+a, .content{
+  margin-left: 10px;
 }
 </style>
