@@ -78,20 +78,15 @@ export default {
 .trash{
   width: 2%;
   height:5%;
-<<<<<<< HEAD
-
-  background: grey;
-  padding: 10px;
-  border-radius:9%;
-
-  cursor: pointer;
-
-=======
   background: grey;
   padding: 10px;
   border-radius:9%;
   cursor: pointer;
->>>>>>> a4169d444e2f5a4a50850c3bed9d808a50cf0525
+  background: grey;
+  padding: 10px;
+  border-radius:9%;
+  cursor: pointer;
+
 }
 .Edit{
   background: grey;
