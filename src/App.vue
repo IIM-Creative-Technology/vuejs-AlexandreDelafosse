@@ -21,6 +21,7 @@
 
 #nav {
   padding: 30px;
+  float: left;
 }
 
 #nav a {

@@ -1,5 +1,8 @@
 <template>
 <div>
+  <br>
+  <br>
+  <br>
   <button id="add-post" ><router-link to="/newpost">Ajouter une page</router-link></button>
 
 <div class="content" v-for="(posts, index) in this.$store.getters.Post" :key="(posts, index)">
