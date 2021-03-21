@@ -4,7 +4,11 @@
 
 <div class="content" v-for="(posts, index) in this.$store.getters.Post" :key="(posts, index)">
 
-  <div class="Postscontent">
+  <div class="Postscontent" @deletePost="noPost">
+
+    <img class="Alde" src="https://risibank.fr/cache/stickers/d1951/195157-full.jpg">
+
+<div class="content">
 
     <h2>
       {{posts[0]}}
@@ -13,6 +17,11 @@
     <p>
       {{posts[3]}}
     </p>
+
+</div>
+
+    <a v-on:click="deletePost(index)" class="trash">X</a>
+
   </div>
 
   </div>
@@ -24,9 +33,39 @@
 <script>
 export default {
   name: "Admin",
+  data() {
+    return {
+      posts: [],
+    };
+  },
+  methods: {
+
+    deletePost(index) {
+      this.$store.getters.Post.splice(index, 1);
+    },
+
+    noPost(no) {
+      this.posts.splice(no, 1);
+    },
+  },
 }
 </script>
 
 <style scoped>
+.Postscontent{
+  display: flex;
+  margin:25px;
+  border: solid 1px red;
+  padding: 10px;
+}
+.Alde{
+  width: 200px;
+}
+.trash{
+  width: 2%;
+  height:5%;
+}
+.content{
 
+}
 </style>
