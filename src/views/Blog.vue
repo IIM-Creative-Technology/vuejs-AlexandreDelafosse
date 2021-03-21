@@ -11,9 +11,6 @@
         <img class="Alde" src="https://risibank.fr/cache/stickers/d1951/195157-full.jpg">
 
         <div>
-          <h2>
-            {{posts[0]}}
-          </h2>
 
           <p>
             {{posts[3]}}
