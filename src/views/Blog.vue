@@ -21,7 +21,9 @@
         </div>
 
         <div>
+
           <router-link :to="'/' + index">Afficher l'article</router-link>
+
         </div>
 
       </div>

@@ -15,14 +15,15 @@
           <h3> Corps du post</h3>
         </article>
         <article id="labels">
-          <label for="Title"></label><input v-model="title" placeholder="Titre de la page" id="Title" /><br> <br>
+          <label for="Title"></label><input v-model="title" placeholder="Titre de la page" id="Title"  /><br> <br>
+
           <label for="Meta Title"></label><input v-model="metat" placeholder="Meta title" id="Meta Title" /> <br> <br>
+
           <label for="Meta description"></label><input v-model="metad" placeholder="Meta description" id="Meta description" /><br> <br>
+
           <label for="Corps du post"></label><textarea v-model="content" placeholder="Corps du post" id="Corps du post" />
         </article>
-        <article>
-          <div id="ajoutimage"></div>
-        </article>
+
       </section>
     </div>
 
@@ -42,6 +43,10 @@ export default {
       content: "",
     };
   },
+
+
+
+
   methods: {
     addPost() {
       this.$store.dispatch('addPost', [this.title, this.metat, this.metad, this.content])
@@ -78,15 +83,6 @@ section{
 #labels{
   padding-left: 50px;
   padding-top: 20px;
-}
-
-#ajoutimage{
-  height: 30px;
-  width: 30px;
-  border-radius: 100%;
-  background: green;
-  border: none;
-  margin: 5px;
 }
 </style>
 
