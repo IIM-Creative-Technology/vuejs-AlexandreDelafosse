@@ -21,7 +21,7 @@
         </div>
 
         <div>
-          <router-link :to="'/' + index">Voir</router-link>
+          <router-link :to="'/' + index">Afficher l'article</router-link>
         </div>
 
       </div>
@@ -46,5 +46,6 @@
     margin: 25px;
     border: solid 1px red;
     padding: 10px;
+    justify-content: space-around;
   }
 </style>

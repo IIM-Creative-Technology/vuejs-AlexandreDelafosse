@@ -8,20 +8,19 @@ export default new Vuex.Store({
     posts: [],
   },
   mutations: {
-    ADD_POSTS(state, payload){
+    ADD_POSTS(state, payload) {
       state.posts.push(payload)
       console.log(state.posts)
     }
   },
   actions: {
-    addPost(context, payload){
+    addPost(context, payload) {
       context.commit('ADD_POSTS', payload)
     }
   },
-  modules: {
-  },
+  modules: {},
   getters: {
-    Post(state){
+    Post(state) {
       return state.posts
     }
   },
