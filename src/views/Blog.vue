@@ -6,7 +6,7 @@
 
   <div class="content" v-for="(posts, index) in this.$store.getters.Post" :key="(posts, index)">
 
-    <div class="Postscontent">
+    <div v-on:click="showArticle" class="Postscontent">
 
       <img class="Alde" src="https://risibank.fr/cache/stickers/d1951/195157-full.jpg">
 
