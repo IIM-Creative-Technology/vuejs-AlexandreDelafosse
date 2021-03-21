@@ -1,3 +1,5 @@
+Travail fait par Alexandre Delafosse et Cameron Lormont !
+
 # vue2
 
 ## Project setup
