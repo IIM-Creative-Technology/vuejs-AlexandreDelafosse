@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import newpost from "@/components/newpost.vue";
+import newpost from "@/components/Newpost.vue";
 export default {
   name: "Post",
   components:{ newpost },
