@@ -1,4 +1,11 @@
+Travail fait par Alexandre Delafosse et Cameron Lormont !
+
 # vue2
+
+Contributeurs : 
+Cameron Celerier Dit Lomont
+Alexandre Delafosse
+
 
 ## Project setup
 ```
@@ -22,3 +29,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+

@@ -1,30 +1,29 @@
 <template>
+  <section class="content">
+    <div class="Postscontent">
 
-  <div class="Postscontent">
-    
+      <img class="Alde" src="https://risibank.fr/cache/stickers/d1951/195157-full.jpg">
 
-    <img class="Alde" src="https://risibank.fr/cache/stickers/d1951/195157-full.jpg">
+      <div>
+        <h1>
+          {{posts[0]}}
+        </h1>
 
-    <div>
-      <h1>
-        {{posts[0]}}
-      </h1>
+        <h2>
+          {{posts[1]}}
+        </h2>
 
-      <h2>
-        {{posts[1]}}
-      </h2>
+        <h3>
+          {{posts[2]}}
+        </h3>
 
-      <h3>
-        {{posts[2]}}
-      </h3>
+        <p>
+          {{posts[3]}}
+        </p>
+      </div>
 
-      <p>
-        {{posts[3]}}
-      </p>
     </div>
-
-  </div>
-
+  </section>
 </template>
 
 <style scoped>
