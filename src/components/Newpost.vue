@@ -26,7 +26,7 @@
       </section>
     </div>
 
-    <button id="add-post" type="text" v-on:click="addPost"> Créer la page</button>
+    <button id="add-post" type="text" v-on:click="addPost"><router-link to="/">Créer une page</router-link></button>
 
   </div>
 </template>
