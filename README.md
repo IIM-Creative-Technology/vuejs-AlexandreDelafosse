@@ -1,5 +1,10 @@
 # vue2
 
+Contributeurs : 
+Cameron Celerier Dit Lomont
+Alexandre Delafosse
+
+
 ## Project setup
 ```
 npm install
@@ -23,6 +28,3 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-Contributeurs : 
-Cameron Celerier Dit Lomont
-Alexandre Delafosse
